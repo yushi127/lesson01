@@ -5,3 +5,4 @@ if (arg1 <= 23) {
 }else {
   console.log (arg1 % 24);
 }
+
