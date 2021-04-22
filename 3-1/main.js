@@ -1,8 +1,7 @@
-  for (let i = 1; i <= 9; i++) {
+  for (let j = 1; j <= 9; j++) {
     var array = [];
-    const numb = i;
     for (let i = 1; i <= 9; i++) {
-      const box = (numb * i);
+      const box = (j * i);
       array.push(`${box} `);
     }
     var result = array.join('');
