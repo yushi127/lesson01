@@ -20,5 +20,6 @@ for(let j = 0; j < arg1; j++) {
       }
     }
   }
-  console.log(array);
+  var result = array.join('');
+  console.log(result);
 }
