@@ -7,11 +7,9 @@ for (let i = 0; i < arg ; i++) {
     array.unshift(' ');
     }
 
-  for (let j = 0; j <= i; j++) {
-    if (j !== 0) {
+  for (let j = 1; j <= i; j++){
       array.push('*','*');
-      array.shift(' ');
-    }    
+      array.shift(' ');   
   }
 
   var result = array.join('');
