@@ -4,17 +4,14 @@ var array1 = [];
 var array2 = [];
 
 let arraySplit1 = arg1.split('');
+let arraySplit2 = arg2.split('');
+
 for (let i = 0; i < arraySplit1.length; i++) {
   array1.unshift(arraySplit1[i])
+  array2.unshift(arraySplit2[i])
 }
 const bind1 = array1.join('');
-
-let arraySplit2 = arg2.split('');
-for (let j = 0; j < arraySplit2.length; j++) {
-  array2.unshift(arraySplit2[j])
-}
 const bind2 = array2.join('');
-
 const num1 = Number( bind1 );
 const num2 = Number( bind2 );
 
