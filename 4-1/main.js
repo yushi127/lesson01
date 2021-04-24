@@ -8,4 +8,4 @@ function compareFunc(a, b) {
   return a - b ;
  }
  array.sort(compareFunc);
- console.log(array[2])
+ console.log(array[2]);
