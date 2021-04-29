@@ -7,6 +7,7 @@ let count =1;
 
 
 const jsonObject1 = JSON.parse(fs1.readFileSync('./playdata.json', 'utf8'));
+// const jsonObject1 = require('./playdata.json');//これだけでもOK
 const jsonObject2 = JSON.parse(fs2.readFileSync('./songs.json', 'utf8'));
 jsonObject1.data.forEach((obj) => {
   jsonObjectarray1.push(obj);
