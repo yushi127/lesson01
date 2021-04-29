@@ -14,6 +14,11 @@ for (let i = 0; i < sprit.length; i++) {
     if (inv !== -1) {
       Newarray.push(sprit[i]);
     }
+    Newarray.sort(
+      function(a,b){
+        return (a < b ? -1 : 1);
+      }
+    );
   }
   const result = Newarray.join();
   console.log(result);
