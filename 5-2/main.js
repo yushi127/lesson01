@@ -14,19 +14,15 @@ jsonObject.users.forEach((obj) => {
     const case4= 5000 * obj.years + 160000;
     if (obj.rank === 'A' && obj.years < 5) {
         obj["income"] = case1;
-        // obj.push(income case1)
     }else if ((obj.rank === 'A' && !obj.years < 5)) {
         obj["income"] = case2;
-        // obj.push(case2);
     }else if(obj.rank === 'B') {
         obj["income"] = case3;
-        // obj.push(case3);
     }else{
         obj["income"] = case4;
-        // obj.push(case4);
     }
-    // console.log(obj);
     result.push(obj);
+    // console.log(obj);
 
     // console.log(obj.income);
 })
@@ -35,13 +31,12 @@ for (let i = 0; i < result.length; i++) {
     
     // console.log(result[i].income);
 
-    result.income.sort(
+    result.sort(
         function(a,b){
-          return (a < b ? 1 : -1);
+          return (a.income < b.income ? 1 : -1);
         }
       );
-      
-      console.log(result[i]);
+      console.log(`${result[i].name}: ${result[i].income}`)
 }
 
 
