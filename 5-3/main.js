@@ -19,12 +19,13 @@ jsonObject2.songs.forEach((obj) => {
 //dataをcountの順番で降順にする
   for (let i = 0; i < jsonObjectarray1.length; i++) {
     jsonObjectarray1[i].count = Number(jsonObjectarray1[i].count)
-   jsonObjectarray1.sort(
-     function(a,b){
-       return (a.count < b.count ? 1 : -1);
-     }
-     );
-    //  console.log(jsonObjectarray1[i].count); //countの降順表示
+    // jsonObjectarray1.sort(
+      //   function(a,b){
+        //     return (a.count < b.count ? 1 : -1);
+        //   }
+        //   );
+        jsonObjectarray1.sort((a, b) => { return b.count - a.count; });
+        // console.log(jsonObjectarray1[i].count); //countの降順表示
 }
 
 // forを回してdataとsongsのIDが同じなら出力
